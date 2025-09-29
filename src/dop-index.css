@@ -1,0 +1,340 @@
+
+header {
+    background-color: rgb(17,17,17);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 2rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.user-menu a {
+    color: white;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.music-section h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.section-block {
+    margin-bottom: 3rem;
+}
+
+.section-block h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 18px;
+    position: relative;
+    text-align: center;
+    margin: 12px;
+}
+.section-block h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    transform: translateX(-50%);
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2.5rem 1.5rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.artist-image-wrap {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+.artist-image:hover {
+    transform: scale(1.04);
+}
+
+.artist-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem 0;
+    text-align: center;
+}
+
+.artist-name a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.artist-name a:hover {
+    color: #d51007;
+    text-decoration: underline;
+}
+
+.artist-card .tags {
+    color: #888;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+.tag-link {
+    color: #d51007;
+    text-decoration: none;
+    margin: 0 0.1em;
+    font-weight: 400;
+    font-size: 0.98em;
+    transition: color 0.2s;
+}
+
+.tracks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.2rem;
+}
+
+.track-cover {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.track-item a {
+    color: #222;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.track-item h3 {
+    font-size: 14px;
+    color: #222;
+}
+
+.track-item .artist {
+    font-size: 14px;
+    color: #222;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links .fab {
+    font-size: 16px;
+    width: 16px;
+}
+
+.language-selector {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.language-list li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.language-list li a:hover {
+    color: #ffffff;
+}
+
+.footer-info {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info p {
+    color: #888888;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.footer-info a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+    }
+    
+    .language-list {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    
+    footer {
+        padding: 30px 15px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .footer-info p {
+        font-size: 11px;
+    }
+}
