@@ -1,0 +1,29 @@
+:root {
+    --muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+.artist {
+    text-align: center;
+}
+
+.artist img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 8px;
+    border: 2px solid var(--border);
+}
+
+.artist-name {
+    margin: 4px 0 2px;
+    font-size: 15px;
+}
+
+.meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}

@@ -1,0 +1,59 @@
+:root {
+    --muted: #6b7280;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 32px 0 8px;
+}
+
+.section-title {
+    margin: 18px 0 16px;
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 28px 36px;
+    justify-content: center;
+}
+
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px 18px;
+}
+
+@media (max-width: 1024px) {
+    .artists-grid {
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    }
+
+    .artist img {
+        width: 128px;
+        height: 128px;
+    }
+
+    .tracks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .artists-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .tracks-grid {
+        grid-template-columns: 1fr;
+    }
+}
